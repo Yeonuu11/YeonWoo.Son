@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main(void)
+{
+	//실수형 변수에 대한 예제
+	/*
+	float : 실수형, 변수값 뒤 f, %f, %.2f
+	double :실수형, %lf, %.2lf
+	*/
+	float f = 46.5f; //숫자 뒤 f 필수
+	printf("%.2f\n", f); // .n :: n자리 까지 표시
+
+	double d = 4.428;
+	printf("%.2lf\n", d); //3번째 자리에서 반올림
+	return 0;
+}
