@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main(void)
+{
+	// printf
+	// 연산
+	int add = 3 + 7; // 10
+	printf("3 + 7 = %d\n", add);
+	printf("%d * %d = %d\n", 30, 79, 30 * 79); //정수형 값을 3번을 받겠다. 그 값들은 콤마 뒤에 값이 순서대로 들어간다
+	//printf 코드 안에서도 연산이 된다.
+	return 0;
+}
