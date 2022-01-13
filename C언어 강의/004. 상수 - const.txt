@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main(void)
+{
+	//변수를 상수로 설정
+	const int YEAR = 2000; //const 자료형 변수명 :: 상수로 설정한다
+	printf("태어난 년도 : %d\n", YEAR);
+	//YEAR = 2001; :: YEAR에 빨간줄이 생긴다 (누구도 값을 못 바꿈)
+	return 0;
+}
