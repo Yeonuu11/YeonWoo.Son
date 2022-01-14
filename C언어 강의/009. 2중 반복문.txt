@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(void)
+{
+	// 2중 반복문
+	for (int i = 1; i <= 3; i++) { // i 는 3까지 세 번을 수행
+		printf("첫 번째 반복문 : %d\n", i);
+
+		for (int j = 1; j <= 5; j++) { // i 가 한 번 수행될 때마다 j 가 5보다 커지기 전까지 수행 :: j 5번 출력을 총 3번 함
+			printf("         두 번째 반복문 : %d\n", j);
+		}
+	}
+
+	return 0;
+}
