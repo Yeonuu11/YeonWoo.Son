@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main(void)
+{
+	int floor;
+	printf("피라미드 : 몇 층까지 쌓겠습니까 ? ");
+	scanf_s("%d", &floor);
+	printf("\n피라미드 %d 층 ---------\n\n", floor);
+
+	for (int line = 0; line < floor; line++) { //줄 반복 구문
+		printf("  ");
+		for (int blank = line; blank < floor - 1; blank++) { //공백 부분
+			printf(" ");
+		}
+		for (int star = 0; star < line * 2 + 1; star++) { //홀수로 늘어나는 별
+			printf("*");
+		}
+		printf("\n");
+	}
+	printf("\n\n\n");
+
+	return 0;
+
+}
