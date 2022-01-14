@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main(void)
+{
+	// 구구단
+	// 2 x 1 = 2
+	// 2 x 2 = 4 ....
+	//... 9 x 9 = 81
+
+	for (int a = 2; a <= 9; a++) {
+		printf("%d단 계산\n", a);
+		for (int b = 1; b <= 9; b++) {
+			printf("  %d x %d = %d\n", a, b, a * b);
+		}
+	}
+
+	return 0;
+}
