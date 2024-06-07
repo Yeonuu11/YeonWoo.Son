@@ -1,3 +1,26 @@
 재귀함수
 - 자기자신을 재호출 하는 형태
 
+
+2의 0부터 9까지의 승을 구하는 프로그램
+
+#include <stdio.h>
+
+int power (int n, int k){
+	
+	return (k==0) ? 1 : n * power(n,k-1);
+}
+
+int main (void){
+	
+	int n = 2, k, c;
+	
+	for(k=0;k<=9;k++){
+		
+		c=power(n,k);
+		printf("%d ^ %d = %d\n",n,k,c);
+	}
+	
+	return 0;
+}
+
