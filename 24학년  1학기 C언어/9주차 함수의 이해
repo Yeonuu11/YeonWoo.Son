@@ -3,7 +3,7 @@
 
 #include <stdio.h>
 
-int Maxnum(int n1,int n2,int n3){
+int Maxnum(int n1,int n2,int n3){//반환, 전달인자 모두 있음
 	
 	if(n1>n2)
 		return (n1>n3) ? n1 : n3;
