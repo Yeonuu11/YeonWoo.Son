@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main (void){
+	
+	char voca[100];
+	int len=0;
+	
+	printf("영어 단어 입력 :");
+	scanf("%s",voca);
+	
+	while(voca[len] != 0)
+		len++;
+	printf("%d\n",len);
+	
+	for(len--;len>=0;len--)//len--인 이유는 배열은 실제 숫자에서 -1 까지 저장되니까
+		printf("%c",voca[len]);
+
+	
+	return 0; 
+}
