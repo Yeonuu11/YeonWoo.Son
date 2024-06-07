@@ -5,12 +5,12 @@ void Fibo (int n){
 	int f1=0, f2=1, f3;
 	int i;
 	
-	printf("%d %d ",f1,f2);
+	printf("%d %d ",f1,f2); //처음과 두번째는 무조건 0, 1이니까 일단 출력
 	
 	for(i=3;i<=n;i++){
-		f3=f1+f2;
+		f3=f1+f2; //앞 두개의 값을 더한게 다음 값
 		printf("%d ",f3);
-		f1=f2;
+		f1=f2; //값 하나씩 치환
 		f2=f3;
 	}
 }
@@ -24,7 +24,7 @@ int main (void){
 	
 	if(n<2){
 		printf("2 이상의 값을 입력하세요!\n");
-		return -1;//비정상적인 종료 
+		return -1;//비정상적인 종료 이거 중요~~~~~ return -1은 비정상적인 종료
 	}
 	
 	Fibo(n);
