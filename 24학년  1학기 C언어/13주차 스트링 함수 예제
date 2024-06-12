@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+
+int main (void){
+	
+	char str1[10], str2[20], str3[40];
+	int len;
+		
+	printf("첫 번째 문자열 입력: ");
+	fgets(str1, sizeof(str1), stdin);
+	
+	len = strlen(str1);
+	str1[len-1] = 0; //엔터 키 널문자로 변환 요 부분 함수로 빼도 됨 
+	
+	printf("두 번째 문자열 입력: ");
+	fgets(str2, sizeof(str2), stdin);
+	
+	len = strlen(str2);
+	str2[len-1] = 0;
+	
+	strcpy(str3,str1); //3을 1에 복사 
+	strcat(str3,str2); //2를 3에 이어붙이기 
+	
+	printf("조합 결과: %s",str3);	
+	
+	return 0;
+}
