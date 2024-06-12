@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int cbv(int n)
+{
+	return (n*n);
+}
+
+void cbr(int *ptr) // int * ptr = &num;
+{
+	*ptr = (*ptr) * (*ptr);
+}
+
+int main (void){
+	
+	int num = 10;
+	
+	printf("%d \n",cbv(num));
+	printf("%d \n",num);
+	
+	cbr(&num);
+	
+	printf("%d \n",num);
+		
+	return 0;
+}
