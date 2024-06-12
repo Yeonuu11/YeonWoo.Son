@@ -1,0 +1,40 @@
+**포인터의 간단한 이해, 선언과 증가
+#include <stdio.h>
+
+int main (void){
+	
+	int num = 10;
+	int *ptr1 = &num;
+	int *ptr2 = ptr1; //*ptr2 = &num 과 같다
+	
+	(*ptr1)++; // num++;
+	(*ptr2)++; // num++;
+	printf("%d \n",num);
+	
+	return 0;
+}
+
+
+**포인터끼리 주소값 바꿔치기
+#include <stdio.h>
+
+int main (void){
+	
+	int num1=10, num2=20;
+	int *ptr1=&num1, *ptr2=&num2;
+	int *temp = 0;
+	
+	(*ptr1) += 10;
+	(*ptr2) -= 10;
+	
+	// ptr1 = &num2;
+	// ptr2 = &num1;
+	
+	temp = ptr1;	// temp = &num1
+	ptr1 = ptr2;	// ptr1 = &num2, ptr2 = &num2
+	ptr2 = temp;	// ptr2 = &num1
+	
+	printf("%d %d \n",*ptr1,*ptr2);
+	
+	return 0;
+}
