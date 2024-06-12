@@ -1,0 +1,35 @@
+대문자는 소문자로, 소문자는 대문자로 출력하는 프로그램
+#include <stdio.h>
+
+int main (void){
+	
+	int ch;
+	int dif; 
+	
+	printf("문자 입력: ");
+	
+	ch = getchar();
+	
+	dif = 'a' - 'A'; //dif = 32 // 이게 좀 더 고급진 방법... 
+	
+//	printf("%d %d \n", 'a', 'A'); a와 A가 아스키코드로 뭔지 알아보는용 
+	
+	if(ch >= 'A' && ch <= 'Z') //'A' = 65
+	{
+		ch += dif;
+		putchar(ch);
+	}
+		
+	else if(ch >= 'a' && ch <= 'z') //'a' = 97
+	{
+		ch -= dif;
+		putchar(ch);
+	}
+	
+	else
+	{
+		puts("범위를 벗어남");
+	}	
+	
+	return 0;
+}
